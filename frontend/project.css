@@ -169,6 +169,10 @@ a{
 
 }
 
+#p01:hover, #p02:hover, #p03:hover {
+    background-image: none;
+}
+
 
 
 
