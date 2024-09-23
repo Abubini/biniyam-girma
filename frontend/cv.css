@@ -101,6 +101,7 @@ main{
     height:45em;
     margin-top: 20px;
     overflow-y: scroll;
+    overflow-y:hidden ;
     /* border:1px solid black; */
 }
 
