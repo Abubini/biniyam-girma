@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>PROJECTS</title>
+</head>
+<body>
+
+    <header>                
+        <div class="logo">
+            <h1>Biniyam</h1>
+            <h1 id="girma">Girma</h1>
+        </div>
+        <div class="navs">
+            <a href="index.html" class="nav">Home</a>
+            <a href="about.html" class="nav">About</a>
+            <a onclick="redirectPage()" class="nav">Cv</a>
+        </div>
+        <div class="nav-container">
+            <button class="open-btn" onclick="openNav()">☰</button>
+             <nav id="mySidebar" class="sidebar">
+                     <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+                     <a href="index.html" class="nav">Home</a>
+                     <a href="about.html" class="nav">About</a>
+                     <a onclick="redirectPage()" class="nav">Cv</a>
+                     
+                    
+                 </nav>
+                 </div>
+    </header>
+
+
+    <main>
+        <section class="main">
+            <div class="project"  id="p03">
+                <h1 class="heading">Gym system</h1>
+                <p class="description">I created a robust gym management system designed to streamline the membership process by enabling users to purchase memberships online, allowing for convenient registration from any location. The system includes an innovative sponsorship feature, where companies or individuals can sponsor multiple members by purchasing a plan and receiving a unique code. This code enables the specified number of members to register under it, offering flexibility and ease of access for both sponsors and members. Whether sponsored or self-paying, members have the option to select from a variety of classes provided by the gym. All memberships are set to expire 30 days from the date of purchase, necessitating monthly renewals. The system also empowers an admin to manage the entire platform, with capabilities to add, edit, or remove membership plans and classes. Additionally, the platform features a blog page that provides users with workout tips, further managed by the admin to ensure the content remains relevant and useful.</p>
+                <div class="buttons">
+                    <a href="https://abubini.github.io/AAiTWebVigorGym/" class="links" target="_blank">preview</a>
+                    <a href="https://github.com/Abubini/AAiTWebVigorGym" class="links" target="_blank">github</a>
+                </div>
+            </div>
+
+        
+
+        
+
+
+         </section>
+         <div class="messageContainer">
+            <p class="message">As of now, I have completed one project, which you can explore above. I am actively working on several other projects, and once they are completed, I will be adding them to this page. Stay tuned for updates, as I continue to expand my portfolio with new and exciting work.</p>
+         </div>
+    </main>
+
+
+
+
+
+
+    <footer>
+        <p class="footer">&copy <span id="year"></span> <a href="index.html">Biniyam Girma</a>. All rights reserved.</p>
+    </footer>
+    
+
+
+    
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+
+    function redirectPage() {
+            // Check the screen width
+            if (window.innerWidth < 1500) {
+                // If screen size is less than 1024px (tablets, mobile), redirect to personal page
+                window.location.href = "/images/biniyam_girma(CV).pdf";
+            } else {
+                // Otherwise, redirect to the CV page (desktops, laptops)
+                window.location.href = "cv.html";
+            }
+        }
+    </script>
+    
+</body>
+</html>
