@@ -97,12 +97,17 @@ main{
 .main {
     display: flex;
     flex-direction: column;
-    width:50%;
-    height:45em;
+    width: 50%;
+    height: 45em;
     margin-top: 20px;
-    overflow-y: scroll;
-    overflow-y:hidden ;
-    /* border:1px solid black; */
+    overflow-y: scroll; /* Enables scrolling */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+/* Hides scrollbar for Chrome, Safari, and Opera */
+.main::-webkit-scrollbar {
+    display: none;
 }
 
 /* Left Section - Main Content */
