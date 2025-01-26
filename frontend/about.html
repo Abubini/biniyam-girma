@@ -327,6 +327,10 @@
       message.style.color =  "red";
     });
 });    
+
+if (window.location.pathname.endsWith('.html')) {
+    window.location.pathname = window.location.pathname.replace('.html', '');
+  }
     </script>
 </body>
 </html>

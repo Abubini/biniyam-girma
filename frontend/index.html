@@ -108,6 +108,9 @@ function redirectPage() {
                 window.location.href = "cv.html";
             }
         }
+        if (window.location.pathname.endsWith('.html')) {
+    window.location.pathname = window.location.pathname.replace('.html', '');
+  }
 </script>
 
 </body>
